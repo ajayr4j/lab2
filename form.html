@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: right;
+}
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=tel], select, textarea{
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #1957c9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  float: right;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #10309c;
+}
+
+.container {
+  border-radius: 1px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <table style="width:100%">
+        <tr >
+            <td><label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First"></td>
+            <td> <label for="lname">.</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last"></td>
+        </tr>
+    </table>
+    
+   
+    
+    
+<label for="email">Choose your username</label>
+<input type="email" id="email" name="email" placeholder="@gmail.com">
+</br>
+<label for="pwd">Create a Password</label>
+<input type="password" id="pwd" name="pwd">
+</br>
+<label>Confirm Your Password:
+  <input type="password" name="confirm_password" id="confirm_password" />
+  </br>
+  <label for="birthday">Birthday:</label>
+  <table style="width:100%">
+      <tr>
+        <td><select class="form-control">
+            <option selected disabled>Month</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select></td>
+          <td>
+            <input type="number" id="day" name="day" placeholder="Day"></td>
+            <td><input type="number" id="year" name="year" placeholder="Year"></td></td>
+      </tr>
+  </table>
+
+</br>
+
+    <label for="Gender">Gender</label>
+    <select id="Gender" name="Gender">
+        <option selected disabled>I am...</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Rather not to say">Rather not to say</option>
+    </select>
+    <label for="phone">Mobile Phone</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  
+  <label for="email">Your current email address</label>
+  <input type="email" id="email" name="email" placeholder="@gmail.com">
+  <label for="checkbox"></label>
+  <input type="checkbox">Skip this verification(Phone verification may be required)</input>
+  <br></br>
+  <img src="captcha.jpg" alt="Captcha" width="300" height="100">
+  <br></br>
+  <label for="Location">Location</label>
+    <select id="Location" name="Location">
+        <option selected disabled>India</option>
+      <option value="India">India</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Nepal">Nepal</option>
+    </select>
+    <input type="checkbox"> I agree to the Google Terms of Service and Privacy Policy</input>
+    <br></br>
+    <input type="checkbox"> Google may use my account information to personalize +1's and content and ads on non-Google Websites.</input>
+    <br></br>
+    <input type="submit" value="Next Step">
+    <br></br>
+  </form>
+  
+  <footer>
+    <p>© 2013 Google | Terms of service | Privacy Policy | Help</p> 
+</footer>
+
+</body>
+</html>
